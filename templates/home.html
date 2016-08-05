@@ -1,0 +1,20 @@
+{% load render_bundle from webpack_loader %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+    
+  </head>
+  
+  <body>
+
+    <my-app>  Loading...</my-app>
+    
+    {% render_bundle 'vendor'%}
+    {% render_bundle 'polyfills'%}
+    {% render_bundle 'main'%}
+    {% render_bundle 'app'%}
+    
+  </body>
+</html>
