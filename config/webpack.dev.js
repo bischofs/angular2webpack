@@ -1,3 +1,4 @@
+var webpack = require('webpack');
 var path = require("path")
 var webpackMerge = require('webpack-merge');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -11,7 +12,12 @@ module.exports = webpackMerge(commonConfig, {
     },
     plugins: [
         new ExtractTextPlugin('[name].css'),
-        new BundleTracker({filename: './webpack-stats.json'})
+        new BundleTracker({filename: './webpack-stats.json'}),
+        new webpack.ProvidePlugin({
+            jQuery: 'jquery',
+            $: 'jquery',
+            jquery: 'jquery'
+        })
     ],
     devServer: {
         historyApiFallback: true,

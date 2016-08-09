@@ -5,6 +5,10 @@ import '@angular/core';
 import '@angular/common';
 import '@angular/http';
 import '@angular/router';
+import 'shit';
+import 'jquery';
+
+import "bootstrap/dist/css/bootstrap.css"
 
 // RxJS
 import 'rxjs';

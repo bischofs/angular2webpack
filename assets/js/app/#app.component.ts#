@@ -10,11 +10,9 @@ export class AppComponent {
 
     // constructor()
     // {
-    //     var sampleSVG = d3.select("#viz")
-    //         .append("svg")
-    //         .attr("width", 100)
-    //         .attr("height", 100);
-
+    //     
     // }
     
 }
+
+
