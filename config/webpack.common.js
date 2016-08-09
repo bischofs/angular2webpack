@@ -8,7 +8,6 @@ module.exports = {
         'vendor': './assets/js/vendor.ts',
         'app': './assets/js/main.ts'
     },
-    entry: './assets/js/main.ts',
     resolve: {
         extensions: ['', '.js', '.ts']
     },
