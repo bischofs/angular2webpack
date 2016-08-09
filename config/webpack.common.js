@@ -51,8 +51,13 @@ module.exports = {
         ]
     },
     plugins: [
+        new HtmlWebpackPlugin({
+                 template: "./assets/index.html",            
+                 minify:false
+
+             }),
         new webpack.optimize.CommonsChunkPlugin({
-            name: ['polyfills','app', 'vendor']
+           name: ['app', 'vendor', 'polyfills']
         })
     ]
 };
